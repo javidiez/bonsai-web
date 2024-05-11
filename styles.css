@@ -164,6 +164,7 @@ hr {
     font-weight: 500 !important;
     padding: 15px 0px !important;
     margin: 0 35px !important;
+    margin-top: 100px !important;
 }
 
 .button__pricing:hover {
