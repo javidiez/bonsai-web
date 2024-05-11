@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- METAS -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+
+    <!-- STYLES -->
+
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- GOOGLE FONTS -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+
+    <!-- ICONS -->
+
+    <script src="https://kit.fontawesome.com/dce89e09ed.js" crossorigin="anonymous"></script>
+
+    <!-- BOOSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+    <title>Bonsai</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary container-fluid p-3">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="bonsai-logo.svg" alt="" class="img-fluid"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse ms-auto" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Product
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Templates
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Review</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <button class="btn btn-outline-success buttons log__in--button" type="submit">Log in</button>
+                    <button class="btn btn-outline-success buttons start__free--button" type="submit">Start
+                        free</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <!-- SECTION PRICING -->
+
+    <section>
+        <div class="switcheo d-flex flex-column container">
+            <div class="pricing__bg--main"></div>
+            <div class="row">
+                <div class="col-md-9 col-12 text-end">
+                    <img src="flecha.svg" alt="" class="img-fluid">
+                </div>
+            </div>
+            <div class="d-flex gap-3 align-items-baseline justify-content-center">
+                <div class="me-5">
+                    <p class="plan fw-light">Plans & Pricing</p>
+                </div>
+                <div class="d-flex gap-3">
+                    <div class="">
+                        <p class="text-muted  pricing__text">MONTHLY</p>
+                    </div>
+                </div>
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                </div>
+
+                <div class="">
+                    <p class="pricing__text">YEARLY</p>
+                </div>
+            </div>
+
+            <div class="pricing py-5 yearly">
+                <div class="container">
+                    <div class="row">
+                        <!-- Free Tier -->
+                        <div class="col-lg-4">
+                            <div class="card mb-5 mb-lg-0">
+                                <div class="card-body d-flex flex-column justify-content-between">
+                                    <div>
+                                        <h5 class="card-title text-muted text-start">Starter</h5>
+                                        <p class="plan__description">Lorem ipsum, dolor sit amet consectetur adipisicing
+                                            elit. Omnis aspernatur consectetur amet.</p>
+                                        <h6 class="card-price text-start">$17<span
+                                                class="period text-uppercase">/month</span>
+                                        </h6>
+                                        <p class="text-end fw-light">Billed yearly</p>
+                                        <hr>
+                                        <ul class="fa-ul">
+                                            <li><span class="fa-li"><i class="fas fa-check"></i></span>Single User</li>
+                                            <li><span class="fa-li"><i class="fas fa-check"></i></span>5GB Storage</li>
+                                            <li><span class="fa-li"><i class="fas fa-check"></i></span>Unlimited Public
+                                                Projects
+                                            </li>
+                                            <li><span class="fa-li"><i class="fas fa-check"></i></span>Community Access
+                                            </li>
+                                            <li class="text-muted"><span class="fa-li"><i
+                                                        class="fas fa-times"></i></span>Unlimited
+                                                Private Projects</li>
+                                            <li class="text-muted"><span class="fa-li"><i
+                                                        class="fas fa-times"></i></span>Dedicated
+                                                Phone Support</li>
+                                            <li class="text-muted"><span class="fa-li"><i
+                                                        class="fas fa-times"></i></span>Free
+                                                Subdomain
+                                            </li>
+                                            <li class="text-muted"><span class="fa-li"><i
+                                                        class="fas fa-times"></i></span>Monthly
+                                                Status
+                                                Reports</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <div class="d-grid">
+                                            <a href="#" class="btn btn-primary text-uppercase button__pricing">START
+                                                FREE</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Plus Tier -->
+                        <div class="col-lg-4">
+                            <div class="card mb-5 mb-lg-0">
+                                <div class="card-body d-flex flex-column justify-content-between">
+                                    <div>
+                                        <h5 class="card-title text-muted text-start">Professional</h5>
+                                        <p class="plan__description">Lorem ipsum, dolor sit amet consectetur adipisicing
+                                            elit. Omnis aspernatur consectetur amet.</p>
+                                        <h6 class="card-price text-start">$32<span
+                                                class="period text-uppercase">/month</span>
+                                        </h6>
+                                        <p class="text-end fw-light">Billed yearly</p>
+                                        <hr>
+                                        <ul class="fa-ul">
+                                            <li><span class="fa-li"><i class="fas fa-check"></i></span><strong>5
+                                                    Users</strong>
+                                            </li>
+                                            <li><span class="fa-li"><i class="fas fa-check"></i></span>50GB Storage</li>
+                                            <li><span class="fa-li"><i class="fas fa-check"></i></span>Unlimited Public
+                                                Projects
+                                            </li>
+                                            <li><span class="fa-li"><i class="fas fa-check"></i></span>Community Access
+                                            </li>
+                                            <li><span class="fa-li"><i class="fas fa-check"></i></span>Unlimited Private
+                                                Projects
+                                            </li>
+                                            <li><span class="fa-li"><i class="fas fa-check"></i></span>Dedicated Phone
+                                                Support
+                                            </li>
+                                            <li><span class="fa-li"><i class="fas fa-check"></i></span>Free Subdomain
+                                            </li>
+                                            <li class="text-muted"><span class="fa-li"><i
+                                                        class="fas fa-times"></i></span>Monthly
+                                                Status
+                                                Reports</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <div class="d-grid">
+                                            <a href="#" class="btn btn-primary text-uppercase button__pricing">START
+                                                FREE</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Pro Tier -->
+                        <div class="col-lg-4">
+                            <div class="card">
+                                <div class="card-body d-flex flex-column justify-content-between">
+                                    <div>
+                                        <h5 class="card-title text-muted text-start">Business</h5>
+                                        <p class="plan__description">Lorem ipsum, dolor sit amet consectetur adipisicing
+                                            elit. Omnis aspernatur consectetur amet.</p>
+                                        <h6 class="card-price text-start">$52<span
+                                                class="period text-uppercase">/month</span>
+                                        </h6>
+                                        <p class="text-end fw-light">Billed yearly</p>
+                                        <hr>
+                                        <ul class="fa-ul d-flex flex-column align-items-stretch">
+                                            <li><span class="fa-li"><i class="fas fa-check"></i></span><strong>Unlimited
+                                                    Users</strong>
+                                            </li>
+                                            <li><span class="fa-li"><i class="fas fa-check"></i></span>150GB Storage
+                                            </li>
+                                            <li><span class="fa-li"><i class="fas fa-check"></i></span>Unlimited Public
+                                                Projects
+                                            </li>
+                                            <li><span class="fa-li"><i class="fas fa-check"></i></span>Community Access
+                                            </li>
+                                            <li><span class="fa-li"><i class="fas fa-check"></i></span>Unlimited Private
+                                                Projects
+                                            </li>
+                                            <li><span class="fa-li"><i class="fas fa-check"></i></span>Dedicated Phone
+                                                Support
+                                            </li>
+                                            <li><span class="fa-li"><i
+                                                        class="fas fa-check"></i></span><strong>Unlimited</strong>
+                                                Free
+                                                Subdomains</li>
+                                            <li><span class="fa-li"><i class="fas fa-check"></i></span>Monthly Status
+                                                Reports
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <div class="d-grid">
+                                            <a href="#" class="btn btn-primary text-uppercase button__pricing">START
+                                                FREE</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="pricing py-5 monthly">
+                <div class="container">
+                    <div class="row">
+                        <!-- Free Tier -->
+                        <div class="col-lg-4">
+                            <div class="card mb-5 mb-lg-0">
+                                <div class="card-body d-flex flex-column justify-content-between">
+                                    <div>
+                                        <h5 class="card-title text-muted text-start">Starter</h5>
+                                        <p class="plan__description">Lorem ipsum, dolor sit amet consectetur adipisicing
+                                            elit. Omnis aspernatur consectetur amet.</p>
+                                        <h6 class="card-price text-start">$31<span
+                                                class="period text-uppercase">/month</span>
+                                        </h6>
+                                        <hr>
+                                        <ul class="fa-ul">
+                                            <li><span class="fa-li"><i class="fas fa-check"></i></span>Single User</li>
+                                            <li><span class="fa-li"><i class="fas fa-check"></i></span>5GB Storage</li>
+                                            <li><span class="fa-li"><i class="fas fa-check"></i></span>Unlimited Public
+                                                Projects
+                                            </li>
+                                            <li><span class="fa-li"><i class="fas fa-check"></i></span>Community Access
+                                            </li>
+                                            <li class="text-muted"><span class="fa-li"><i
+                                                        class="fas fa-times"></i></span>Unlimited
+                                                Private Projects</li>
+                                            <li class="text-muted"><span class="fa-li"><i
+                                                        class="fas fa-times"></i></span>Dedicated
+                                                Phone Support</li>
+                                            <li class="text-muted"><span class="fa-li"><i
+                                                        class="fas fa-times"></i></span>Free
+                                                Subdomain
+                                            </li>
+                                            <li class="text-muted"><span class="fa-li"><i
+                                                        class="fas fa-times"></i></span>Monthly
+                                                Status
+                                                Reports</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <div class="d-grid">
+                                            <a href="#" class="btn btn-primary text-uppercase button__pricing">START
+                                                FREE</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Plus Tier -->
+                        <div class="col-lg-4">
+                            <div class="card mb-5 mb-lg-0">
+                                <div class="card-body d-flex flex-column justify-content-between">
+                                    <div>
+                                        <h5 class="card-title text-muted text-start">Professional</h5>
+                                        <p class="plan__description">Lorem ipsum, dolor sit amet consectetur adipisicing
+                                            elit. Omnis aspernatur consectetur amet.</p>
+                                        <h6 class="card-price text-start">$47<span
+                                                class="period text-uppercase">/month</span>
+                                        </h6>
+                                        <hr>
+                                        <ul class="fa-ul">
+                                            <li><span class="fa-li"><i class="fas fa-check"></i></span><strong>5
+                                                    Users</strong>
+                                            </li>
+                                            <li><span class="fa-li"><i class="fas fa-check"></i></span>50GB Storage</li>
+                                            <li><span class="fa-li"><i class="fas fa-check"></i></span>Unlimited Public
+                                                Projects
+                                            </li>
+                                            <li><span class="fa-li"><i class="fas fa-check"></i></span>Community Access
+                                            </li>
+                                            <li><span class="fa-li"><i class="fas fa-check"></i></span>Unlimited Private
+                                                Projects
+                                            </li>
+                                            <li><span class="fa-li"><i class="fas fa-check"></i></span>Dedicated Phone
+                                                Support
+                                            </li>
+                                            <li><span class="fa-li"><i class="fas fa-check"></i></span>Free Subdomain
+                                            </li>
+                                            <li class="text-muted"><span class="fa-li"><i
+                                                        class="fas fa-times"></i></span>Monthly
+                                                Status
+                                                Reports</li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <div class="d-grid">
+                                            <a href="#" class="btn btn-primary text-uppercase button__pricing">START
+                                                FREE</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Pro Tier -->
+                        <div class="col-lg-4">
+                            <div class="card">
+                                <div class="card-body d-flex flex-column justify-content-between">
+                                    <div>
+                                        <h5 class="card-title text-muted text-start">Business</h5>
+                                        <p class="plan__description">Lorem ipsum, dolor sit amet consectetur adipisicing
+                                            elit. Omnis aspernatur consectetur amet.</p>
+                                        <h6 class="card-price text-start">$68<span
+                                                class="period text-uppercase">/month</span>
+                                        </h6>
+                                        <hr>
+                                        <ul class="fa-ul d-flex flex-column align-items-stretch">
+                                            <li><span class="fa-li"><i class="fas fa-check"></i></span><strong>Unlimited
+                                                    Users</strong>
+                                            </li>
+                                            <li><span class="fa-li"><i class="fas fa-check"></i></span>150GB Storage
+                                            </li>
+                                            <li><span class="fa-li"><i class="fas fa-check"></i></span>Unlimited Public
+                                                Projects
+                                            </li>
+                                            <li><span class="fa-li"><i class="fas fa-check"></i></span>Community Access
+                                            </li>
+                                            <li><span class="fa-li"><i class="fas fa-check"></i></span>Unlimited Private
+                                                Projects
+                                            </li>
+                                            <li><span class="fa-li"><i class="fas fa-check"></i></span>Dedicated Phone
+                                                Support
+                                            </li>
+                                            <li><span class="fa-li"><i
+                                                        class="fas fa-check"></i></span><strong>Unlimited</strong>
+                                                Free
+                                                Subdomains</li>
+                                            <li><span class="fa-li"><i class="fas fa-check"></i></span>Monthly Status
+                                                Reports
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div>
+                                        <div class="d-grid">
+                                            <a href="#" class="btn btn-primary text-uppercase button__pricing">START
+                                                FREE</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- SECTION ADDONS -->
+
+    <section>
+        <div class="container">
+            <div>
+                <div class="text-center addons_title">
+                    <h1>Super charge your work with add-ons</h1>
+                </div>
+                <div class="row addons__blocks d-flex align-items-center mb-5">
+                    <div class="col-10">
+                        <h5 class="fs-4">Collaborators</h5>
+                        <p class="fw-light">Invite other users to specific projects for limited access and
+                            functionality.</p>
+                    </div>
+                    <div class="col-2">
+                        <h2 class="fs-1 text-secondary">Free</h2>
+                    </div>
+
+                </div>
+                <div class="row addons__blocks d-flex align-items-center mb-5">
+                    <div class="col-10">
+                        <h5 class="fs-4">Partners</h5>
+                        <p class="fw-light">Invite other users for full account access and company management.</p>
+                    </div>
+                    <div class="col-2">
+                        <h2 class="fs-1 text-secondary">$9</h2>
+                    </div>
+
+                </div>
+                <div class="row addons__blocks d-flex align-items-centermb-5">
+                    <div class="col-10">
+                        <h5 class="fs-4">Bonsai Tax</h5>
+                        <p class="fw-light">Track expenses, identify write-offs, and estimate quarterly taxes easily.
+                        </p>
+                        <a href="#">LEARN MORE ></a>
+                    </div>
+                    <div class="col-2">
+                        <h2 class="fs-1 text-secondary">$10</h2>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- SECTION GROW -->
+
+    <section>
+        <div class="container d-flex justify-content-center">
+            <div class="row grow d-flex align-items-center ">
+                <div class="col-12 col-md-8">
+                    <h3 class="pb-3">It's <span>your</span> business.</h3>
+                    <h3>We're here to help it grow.</h3>
+                </div>
+                <div class="col-12 col-md-4 text-end">
+
+                    <a href="#" class="btn btn-primary text-uppercase button__grow">START FREE</a>
+
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- SECTION ACCORDION -->
+
+    <section>
+        <div class="container">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            How does the free trial work?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">When you start your trial with Bonsai you'll receive full, unlimited
+                            access to all of Bonsai's Workflow or Workflow Plus Features! You will need to enter your
+                            credit card information to begin your trial, but don't worry - we won't charge you anything
+                            until the subscription ends! If you wish to cancel at any time during the trial period, you
+                            can do so through your Subscriptions Settings Page.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            Can I change plans anytime?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Yes, you can from within your account. If you have already
+                            subscribed to a plan, or want to downgrade or upgrade your current one, you can do this by
+                            going to your "Settings" and "Subscription".</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseThree" aria-expanded="false"
+                            aria-controls="flush-collapseThree">
+                            How do I pause my Bonsai subscription?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">We totally understand that with the nature of freelancing, work ebbs
+                            and flows so you might not always need your Bonsai subscription to remain active! The good
+                            news is that you can cancel or pause your monthly subscription at any time without penalty.
+                            Once cancelled, you'll be able to continue logging in to access all your documents and even
+                            continue to use our free features, like Time Tracking! In order to cancel your subscription,
+                            login to your Bonsai account.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseFour" aria-expanded="false"
+                            aria-controls="flush-collapseFour">
+                            What is your refund policy?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseFour" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">If you contact us within 2 weeks of being charged for your
+                            subscription, we will be happy to issue a refund for you!Beyond those 2 weeks, you will need
+                            to cancel or modify the subscription from the Subscriptions Tab in Settings to avoid future
+                            charges, but refunds will not be issued. This applies to both monthly and annual plans.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-12 col-sm-4 mb-5">
+                    <p class="footer_titles">PRODUCT</p>
+                    <ul>
+                        <li>Proposals</li>
+                        <li>Contracts</li>
+                        <li>Products</li>
+                        <li>Services</li>
+                        <li>Proposals</li>
+                        <li>Contracts</li>
+                        <li>Products</li>
+                        <li>Services</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-4 mb-5">
+                    <p class="footer_titles">FREE RESOURCES</p>
+                    <ul>
+                        <li>Proposals</li>
+                        <li>Contracts</li>
+                        <li>Products</li>
+                        <li>Services</li>
+                        <li>Proposals</li>
+                        <li>Contracts</li>
+                        <li>Products</li>
+                        <li>Services</li>
+                        <li>Contracts</li>
+                        <li>Products</li>
+                        <li>Services</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-4">
+                    <p class="footer_titles">BONSAI</p>
+                    <ul>
+                        <li>Proposals</li>
+                        <li>Contracts</li>
+                        <li>Products</li>
+                        <li>Services</li>
+                        
+                    </ul>
+                </div> 
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

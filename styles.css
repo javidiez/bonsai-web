@@ -1,0 +1,267 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 100;
+}
+
+li{
+    list-style: none;
+    font-weight: 300;
+    line-height: 40px;
+}
+
+ul{
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.navbar {
+    font-family: "Open Sans", sans-serif;
+
+}
+
+.navbar-nav {
+    font-size: 18px !important;
+}
+
+.nav-item {
+    padding-right: 30px;
+}
+
+.pricing__bg--main {
+    content: "";
+    position: absolute;
+    background-color: #009c78;
+    clip-path: polygon(100% 0, 0 1%, 89% 85%);
+    width: 120vw;
+    height: 100vh;
+    z-index: -10;
+    top: 0;
+    right: 0;
+    opacity: 0.04;
+}
+
+.buttons {
+    font-weight: 700 !important;
+    padding: 7px 30px !important;
+    color: #00b289 !important;
+    border-color: #00b289 !important;
+    text-transform: uppercase;
+    font-size: clamp(12px, 0.89vw, 13px) !important;
+    border-radius: 3px !important;
+}
+
+.switcheo {
+    margin-top: 100px
+}
+
+.switcheo:has(input[type="checkbox"]:checked) :is(.monthly) {
+    display: none;
+}
+
+.switcheo:has(input[type="checkbox"]:checked) :is(.yearly) {
+    display: block;
+}
+
+.switcheo:has(input[type="checkbox"]:not(checked)) :is(.monthly) {
+    display: block;
+}
+
+.switcheo:has(input[type="checkbox"]:not(checked)) :is(.yearly) {
+    display: none;
+}
+
+
+.start__free--button {
+    color: #fff !important;
+    background-color: #00b289 !important;
+}
+
+.start__free--button:hover {
+    background-color: #009c78 !important;
+}
+
+.log__in--button {
+    margin-right: 10px !important;
+}
+
+.log__in--button:hover {
+    background-color: #00b289 !important;
+    color: #fff !important;
+}
+
+.plan {
+    font-size: clamp(25px, 2vw, 60px);
+}
+
+.pricing__text {
+    font-size: clamp(16px, 1.1vw, 30px) !important;
+}
+
+
+.form-check-input {
+    background-color: #00b289 !important;
+    height: clamp(25px, 3vh, 60px) !important;
+    width: clamp(50px, 3vw, 60px) !important;
+    border-color: #00b289 !important;
+}
+
+.form-check-input:not(:checked) {
+    background-color: #00b289;
+    border-color: none !important;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e") !important;
+}
+
+.card {
+    padding: 40px;
+    min-height: 700px;
+    box-shadow: 0 0 15px #0003;
+}
+
+.card-title {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.plan__description {
+    font-weight: 300;
+    font-size: 0.8rem;
+}
+
+
+.card-price {
+    font-size: 2.9rem;
+    color: #555;
+}
+
+.period {
+    font-size: clamp(20px, 1.7vw, 50px);
+    margin-left: 15px;
+    font-weight: 300;
+}
+
+hr {
+    border: 1px solid #00b289 !important;
+    opacity: 1 !important;
+}
+
+.fa-check {
+    color: #00b289;
+}
+
+.fa-times {
+    color: red;
+}
+
+.button__pricing {
+    background-color: #00b289 !important;
+    border-color: #00b289 !important;
+    font-size: 15px !important;
+    font-weight: 500 !important;
+    padding: 15px 0px !important;
+    margin: 0 35px !important;
+}
+
+.button__pricing:hover {
+    background-color: #009c78 !important;
+}
+
+.addons_title {
+    margin: 100px 0 70px 0;
+    font-size: 2.4rem !important;
+}
+
+.addons_title h1 {
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin: 0 !important;
+}
+
+.addons__blocks {
+    background-color: #fff;
+    box-shadow: 0 0 45px #0001;
+    padding: 40px 20px;
+    border-radius: 10px;
+}
+
+.addons__blocks p {
+    margin-bottom: 13px !important;
+}
+
+.addons__blocks a {
+    text-decoration: none;
+    color: #00b289;
+    font-weight: 500;
+    font-size: 0.8rem;
+}
+
+.grow {
+    padding: 80px 50px;
+    margin: 100px 0 !important;
+    background-color: #e5fff9;
+    width: clamp(600px, 80%, 1000px) !important;
+}
+
+.grow h3 {
+    margin: 0 !important;
+    font-weight: 300;
+    font-size: 2.4rem;
+}
+
+.grow span {
+    color: #00b289;
+}
+
+.button__grow {
+    background-color: #00b289 !important;
+    border-color: #00b289 !important;
+    font-size: 15px !important;
+    font-weight: 500 !important;
+    padding: 15px 20px !important;
+    letter-spacing: 3px;
+
+}
+
+.accordion-button{
+    font-size: 1.5rem !important;
+    font-weight: 800;
+    color: #444 !important;
+}
+
+.accordion-button:hover{
+    color: #00b289 !important;
+}
+
+.accordion-button:not(.collapsed) {
+    color: #444 !important;
+    background-color: white !important;
+}
+
+.accordion-button:focus{
+    box-shadow: none !important;
+}
+
+footer{
+    margin: 50px 0px;
+    padding-left: 20px;
+}
+
+.footer_titles{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+
+
+/* MEDIAS QUERIES */
+
+@media screen and (max-width: 767px) {
+    .button__grow {
+        float: left;
+        margin-top: 25px;
+    }
+}
